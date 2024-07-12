@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".searchActivity">
+
+
+    <EditText
+        android:id="@+id/searchview"
+        android:layout_width="380dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search_bar"
+        android:ems="10"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Search Recipes"
+        android:inputType="textFilter"
+        android:paddingStart="47dp"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/goback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchview"
+        app:layout_constraintStart_toStartOf="@+id/searchview"
+        app:layout_constraintTop_toTopOf="@+id/searchview"
+        app:srcCompat="@drawable/car_ui_icon_arrow_back" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/search_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
