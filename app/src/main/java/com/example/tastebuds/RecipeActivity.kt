@@ -30,7 +30,7 @@ class RecipeActivity : AppCompatActivity() {
             binding.instrucbtn.background = null
             binding.instrucbtn.setImageResource(R.drawable.instrucbtn)
             binding.ingbtn.background = null
-            binding.ingbtn.setImageResource(R.drawable.instrcbtnup)
+            binding.ingbtn.setImageResource(R.drawable.ingbtnup)
             binding.stepscroll.visibility = View.VISIBLE
             binding.ingscroll.visibility = View.GONE
 
